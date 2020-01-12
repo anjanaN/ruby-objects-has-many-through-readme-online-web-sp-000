@@ -31,12 +31,4 @@ class Waiter
 
     best_tipped_meal.customer
   end
-
-  def worst_tipper
-    worst_tipped_meal = meals.max do |meal_a, meal_b|
-      meal_a.tip <=> meal_b.tip
-    end
-
-    worst_tipped_meal.customer
-  end
 end
